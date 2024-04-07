@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>It's Mine Portfolio</title>
+<style>
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #53abab;
+  background-image: url(./fab\ logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #050505;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px,300px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-image:transparent;
+  color: #3b0549;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  margin: 0 25px;
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff4d79;
+}
+
+.main-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: calc(33.33% - 60px);
+  margin-bottom: 60px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://via.placeholder.com/600x400');
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.card:hover:before {
+  opacity: 0.5;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+}
+
+.footer {
+  background-image: url('https://via.placeholder.com/1200x300');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Additional Styles for Creativity */
+.card h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #ff4d79;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.card p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card li {
+  margin-bottom: 12px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff4d79;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  background-color: #ff3d54;
+  transform: scale(1.05);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.animation-container {
+  position: relative;
+  height: 400px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.animation {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: move 5s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1>It's Vansh Jaiswal</h1>
+  </header>
+  <nav class="navbar">
+    <a href="#" class="nav-link">Home</a>
+    <a href="#" class="nav-link">About</a>
+    <a href="#" class="nav-link">Assignments</a>
+    <a href="#" class="nav-link">Contact</a>
+  </nav>
+  <div class="main-content">
+    <div class="card">
+      <div class="card-content">
+        <h2>About Me</h2>
+        <p>I am a sports Enthusiastic student exploring the Digital Fabrication Skills in FAB SSGMCE Shegaon.I dont have Technical backgroud but enthusiastic about learning how to bring ideas to reality through Digital Fabrication Skills.Being a 1 st year Engineering Student, I am having good Communication . I love playing outdoor games like Kabbadi,Cricket, Badminton which helped me to be a better .Skills and Learning from FABLAB would help me to deliver better to Society.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <h2>Assignments</h2>
+        <p>Here are some of my Weekly Assignment:</p>
+        <ul>
+          <li>WEEK 1</li>
+          <li>WEEK 2</li>
+          <li>WEEK 3</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-content">
+        <h2>Contact Me</h2>
+        <p>+91 8767043700<br>
+           jaiswalvansh58@gmai.com
+        </p>
+        <a href="#" class="button">Contact</a>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2024 My Super Creative Portfolio</p>
+  </footer>
+</div>
+
+<!-- Additional Creative Element -->
+<div class="animation-container">
+  <img src="https://via.placeholder.com/800x400" alt="Creative Animation" class="animation">
+</div>
+
+</body>
+</html>
